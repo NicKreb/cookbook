@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head.ejs') %>
+<body>
+    <%- include('../partials/nav.ejs') %>
+
+    <div class="chef-kreb">
+        <img src="../assets/Chef Crab.svg">
+    </div>
+
+    <div class="cookBook content">
+        <h2>Cook Book</h2>
+
+        <% if (recipes.length > 0) { %>
+            <% recipes.forEach(recipe => { %>
+                <a class="single" href="/recipes/<%= recipe._id %>">
+                 <h3 class="title"><%= recipe.title %></h3>
+                    <h4 class="prep-time"><%= recipe.preptime %></h2>
+                    <h4 class="cook-time"><%= recipe.cooktime %></h4>
+                    <small> <%= recipe.flavor %></small>
+                    <p><%= recipe.ingredients %></p>
+                    <p><%= recipe.instructions %></p>
+                </a>
+                <% }) %>
+            <% } else { %>
+                <p>This is not the Recipe you are looking for...</p>
+            <% } %>
+    </div>
+
+    <%- include('../partials/footer.ejs') %>
+</body>
+</html>

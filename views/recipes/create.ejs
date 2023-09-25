@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head.ejs') %>
+<body>
+    
+    <%- include('../partials/nav.ejs') %>
+
+    <div class="create-recipe content">
+        <form action="/recipes" method="POST">
+            <!-- title -->
+            <label for="title">*Recipe title:</label>
+            <input type="text" id="title" name="title" required>
+            <!-- Prep Time -->
+            <label for="preptime">Prep Time:</label>
+            <input type="text" id="preptime" name="preptime">
+            <!-- Cook Time -->
+            <label for="cooktime">*Cook Time:</label>
+            <input type="text" id="cooktime" name="cooktime" required>
+            <!-- Flavor -->
+            <label for="flavor">Flavor:</label>
+            <input type="text" id="flavor" name="flavor">
+            <!-- Ingredients -->
+            <label for="ingredients">*Ingredients:</label>
+            <input type="text" id="ingredients" name="ingredients" required>
+            <!-- Instructions -->
+            <label for="instructions">*Instructions:</label>
+            <input type="text" id="instructions" name="instructions" required>
+            <button>Submit</button>
+        </form>
+        
+    </div>
+
+    <%- include('../partials/footer.ejs') %>
+</body>
+</html>
