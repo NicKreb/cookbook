@@ -6,6 +6,10 @@ const recipeSchema = new Schema({
         type: String,
         required: true
     },
+    recipeImage: {
+        type: String,
+        required: false
+    },
     preptime: {
         type: Number,
         required: false
