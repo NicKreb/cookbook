@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+body {
+    background-image: url('https://github.com/NicKreb/cookbook/blob/main/assets/assortment-food-healthy-relaxed-mind.jpg?raw=true');
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    font-family: 'Croissant One', cursive; 
+    background-repeat: no-repeat;
+    background-color: aquamarine;
+    background-size: cover;
+}
+
+p, h1, h2, h3, a, ul{
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+    color: #222;
+}
+
+/* nav list */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    padding-bottom: 10px;
+    border: solid 5px maroon;
+    background-color: palegoldenrod;
+    text-transform: uppercase;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav li{
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+nav h1{
+    color: rgb(128, 62, 62);
+    text-align: center;
+}
+
+nav p{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+nav .chef-kreb{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    background-color: palegoldenrod;
+    border: solid 5px maroon;
+}
+
+.cookBook a{
+    display: block;
+    margin: 40px 0;
+    padding-left: 30px;
+}
+
+.title{
+    text-decoration: underline 3px solid maroon;
+    padding-right: 30px;
+}
+
+.cookBook a:hover h3{
+    color: rgb(220, 117, 117);
+}
+
+.details{
+    position: relative;
+}
+
+.delete{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.delete:hover{
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    box-shadow: 2px 2px 3px black;
+}
