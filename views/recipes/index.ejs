@@ -3,32 +3,26 @@
 <%- include('../partials/head.ejs') %>
 <body>
     <%- include('../partials/nav.ejs') %>
-   
-    <div class="chef-kreb">
-        <img 
-        src="https://raw.githubusercontent.com/NicKreb/cookbook/9f51f1e957ddedfd0cae7ad2d5695c7504df6a27/assets/Chef%20Crab.svg" 
-        height="200px" 
-        width="200px"
-        >
-    </div>
 
+<div class="container">
     <div class="cookBook content">
-        <h2>Cook Book</h2>
-
-        <% if (recipes.length > 0) { %>
-            <% recipes.forEach(recipe => { %>
-                <a class="single" href="/recipes/<%= recipe._id %>">
-                 <h3 class="title"><%= recipe.title %></h3>
-                    <h4 class="prep-time"><%= recipe.preptime %></h2>
-                    <h4 class="cook-time"><%= recipe.cooktime %></h4>
-                    <small> <%= recipe.flavor %></small>
-                    <p><%= recipe.ingredients %></p>
-                    <p><%= recipe.instructions %></p>
-                </a>
-                <% }) %>
-            <% } else { %>
-                <p>This is not the Recipe you are looking for...</p>
-            <% } %>
+            <h2>Cook Book</h2>
+        
+            <% if (recipes.length > 0) { %>
+                <% recipes.forEach(recipe => { %>
+                    <a class="single" href="/recipes/<%= recipe._id %>">
+                     <h3 class="title"><%= recipe.title %></h3>
+                        <h4 class="prep-time"><%= recipe.preptime %></h2>
+                        <h4 class="cook-time"><%= recipe.cooktime %></h4>
+                        <small> <%= recipe.flavor %></small>
+                        <p><%= recipe.ingredients %></p>
+                        <p><%= recipe.instructions %></p>
+                    </a>
+                    <% }) %>
+                <% } else { %>
+                    <p>This is not the Recipe you are looking for...</p>
+                <% } %>
+        </div>
     </div>
 
     <%- include('../partials/footer.ejs') %>
