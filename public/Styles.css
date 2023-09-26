@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
 
 body {
-    background-image: url('https://github.com/NicKreb/cookbook/blob/main/assets/assortment-food-healthy-relaxed-mind.jpg?raw=true');
     max-width: 1200px;
     margin: 20px auto;
-    padding: 0 20px;
-    font-family: 'Croissant One', cursive; 
-    background-repeat: no-repeat;
-    background-color: aquamarine;
-    background-size: cover;
+    padding: 0 20px; 
+    background-color: rgb(255, 248, 227);
 }
 
 p, h1, h2, h3, a, ul{
@@ -26,8 +22,13 @@ nav{
     align-items: center;
     margin-bottom: 60px;
     padding-bottom: 10px;
-    border: solid 5px maroon;
-    background-color: palegoldenrod;
+    font-family: 'Croissant One', cursive;
+    background-image: url('https://github.com/NicKreb/cookbook/blob/main/assets/foodnavBar.png?raw=true');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(251, 250, 250);
+    box-shadow: 2px 2px 1.5px 0px;
+    border-radius: 10px;
     text-transform: uppercase;
 }
 
@@ -44,14 +45,32 @@ nav li{
     margin-left: 20px;
 }
 
+nav li a{
+    border: solid 2px black;
+    background-color: rgb(251, 250, 250);
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px 0px;
+}
+
+nav a:hover{
+    background-color: maroon;
+    color: white;
+}
+
 nav h1{
-    color: rgb(128, 62, 62);
+    margin-right: 10px;
+    margin-left: 10px;
+    border: solid black 3px;
+    background-color: rgb(251, 250, 250);
+    color: rgb(237, 118, 118);
     text-align: center;
 }
 
 nav p{
     margin-right: 10px;
     margin-left: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px black;
 }
 
 nav .chef-kreb{
@@ -59,9 +78,45 @@ nav .chef-kreb{
     justify-content: center;
 }
 
-.container{
-    background-color: palegoldenrod;
-    border: solid 5px maroon;
+.advertisement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adleft{
+    transform: rotate(-90deg);
+}
+
+.adright{
+    transform: rotate(90deg);
+}
+
+.advertisement img{
+    border: solid black 2px;
+}
+
+.single{
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 0px;
+}
+
+.recipe-image{
+    float: right;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    border: solid black 4px;
+}
+
+.single p{
+    margin-bottom: 10px;
+}
+
+.recipe-font{
+    text-decoration: underline;
 }
 
 .cookBook a{
@@ -71,6 +126,8 @@ nav .chef-kreb{
 }
 
 .title{
+    margin-top: 10px;
+    font-family: 'Croissant One', cursive;
     text-decoration: underline 3px solid maroon;
     padding-right: 30px;
 }
@@ -79,15 +136,23 @@ nav .chef-kreb{
     color: rgb(220, 117, 117);
 }
 
+.display-container {
+    background-color: white;
+    border: solid 3px maroon;
+}
+
 .details{
     position: relative;
 }
 
 .delete{
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-radius: 50%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    box-shadow: 2px 2px 3px black;
+    border-radius: 5px;
     padding: 8px;
 }
 
@@ -95,5 +160,4 @@ nav .chef-kreb{
     cursor: pointer;
     color: white;
     background-color: red;
-    box-shadow: 2px 2px 3px black;
-}
+} 
