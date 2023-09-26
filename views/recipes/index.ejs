@@ -4,19 +4,22 @@
 <body>
     <%- include('../partials/nav.ejs') %>
 
-<div class="container">
-    <div class="cookBook content">
-            <h2>Cook Book</h2>
+<div class="advertisement"><p class="adleft">Advertisement</p><img src="https://github.com/NicKreb/cookbook/blob/main/assets/advertisement%201.png?raw=true" height="100" width="600" alt="Place your ad here!"><p class="adright">Advertisement</p></div>
+
+    <div class="container">
+        <div class="cookBook content">
+            <h2 class="title">Cook Book</h2>
         
             <% if (recipes.length > 0) { %>
                 <% recipes.forEach(recipe => { %>
                     <a class="single" href="/recipes/<%= recipe._id %>">
                      <h3 class="title"><%= recipe.title %></h3>
-                        <h4 class="prep-time"><%= recipe.preptime %></h2>
-                        <h4 class="cook-time"><%= recipe.cooktime %></h4>
-                        <small> <%= recipe.flavor %></small>
-                        <p><%= recipe.ingredients %></p>
-                        <p><%= recipe.instructions %></p>
+                     <img class="recipe-image" src="<%= recipe.recipeImage %>" width="200" height="200" alt="<%= recipe.title %>">
+                        <h4 class="prep-time"><em class="recipe-font">Prep Time:</em> <%= recipe.preptime %> minutes</h2>
+                        <h4 class="cook-time"><em class="recipe-font">Cook Time:</em> <%= recipe.cooktime %> minutes</h4>
+                        <small><em class="recipe-font">Flavor Profile(s):</em> <%= recipe.flavor %></small>
+                        <p><em class="recipe-font">Ingredients:</em><br> <%= recipe.ingredients %></p>
+                        <p><em class="recipe-font">Instructions:</em><br> <%= recipe.instructions %></p>
                     </a>
                     <% }) %>
                 <% } else { %>
