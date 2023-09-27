@@ -78,6 +78,17 @@ nav .chef-kreb{
     justify-content: center;
 }
 
+h2{
+    margin-bottom: 40px;
+  }
+  h3{
+    text-transform: capitalize;
+    margin-bottom: 8px;
+  }
+  .content{
+    margin-left: 20px;
+  }
+
 .advertisement{
     display: flex;
     justify-content: center;
@@ -106,8 +117,16 @@ nav .chef-kreb{
 .recipe-image{
     float: right;
     margin-left: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: solid black 4px;
+}
+
+.recipe-display-image{
+    float: none;
     margin-right: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     border: solid black 4px;
 }
 
@@ -143,6 +162,7 @@ nav .chef-kreb{
 
 .details{
     position: relative;
+    margin-left: 20px;
 }
 
 .delete{
@@ -161,3 +181,70 @@ nav .chef-kreb{
     color: white;
     background-color: red;
 } 
+
+.create-recipe{
+    max-width: 500px;
+    margin: auto;
+    background-color: white;
+    border: solid maroon 3px;
+}
+
+.create-recipe form{
+    max-width: 400px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.create-recipe input,
+.create-recipe textarea{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+textarea{
+    height: 120px;
+}
+
+.create-recipe button{
+    border-radius: 5px;
+    width: 450px;
+    margin-bottom: 10px;
+    background: maroon;
+    color: white;
+    padding: 6px;
+    border: 0;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.create-recipe label{
+    margin-top: 10px;
+    font-family: 'Croissant One', cursive;
+    text-decoration:  3px thick solid maroon;
+    padding-right: 30px;
+}
+
+.asterisk{
+    color: maroon;
+}
+
+.about{
+    margin: auto 10px; 
+    background-color: white;
+    border: solid maroon 3px;
+}
+
+.about p{
+    margin-bottom: 5px;
+}
+
+.about h2{
+    margin-top: 10px;
+}
+
+.about h2, p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
