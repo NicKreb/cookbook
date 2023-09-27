@@ -3,15 +3,16 @@
 
 <body>
   <%- include("../partials/nav.ejs") %>
-<div class="advertisement"><p class="adleft">Advertisement</p><img src="https://github.com/NicKreb/cookbook/blob/main/assets/advertisement%201.png?raw=true" height="100" width="600" alt="Place your ad here!"><p class="adright">Advertisement</p></div>
+
+  <div class="advertisement"><p class="adleft">Advertisement</p><img src="https://github.com/NicKreb/cookbook/blob/main/assets/advertisement%201.png?raw=true" height="100" width="600" alt="Place your ad here!"><p class="adright">Advertisement</p></div>
   <br >
   <br >
 
 <div class="display-container">
   <div class="details content">
+    <img class="recipe-display-image" src="<%= recipe.recipeImage %>" width="auto" height="400" alt="<%= recipe.title %>">
     <h2><%= recipe.title %></h2>
     <div class="content">
-      <img class="recipe-image" src="<%= recipe.recipeImage %>" width="600" height="400" alt="<%= recipe.title %>">
         <h4 class="prep-time"><em class="recipe-font">Prep Time:</em> <%= recipe.preptime %> minutes</h2>
             <h4 class="cook-time"><em class="recipe-font">Cook Time:</em> <%= recipe.cooktime %> minutes</h4>
             <small><em class="recipe-font">Flavor profile:</em> <%= recipe.flavor %></small><br>
@@ -27,6 +28,7 @@
   <br>
   <br>
 </div>
+
   <%- include("../partials/footer.ejs") %>
 
   <script>
