@@ -249,9 +249,13 @@ textarea{
     margin-right: 10px;
 }
 
+
 .not-found{
     display: block;
     width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    background-color: rgb(71, 67, 67);
 }
 
 .not-found p{
@@ -261,5 +265,4 @@ textarea{
     justify-content: center;
     font-family: 'Croissant One', cursive;
     text-decoration:  3px thick solid;
-    margin-bottom: 20px;
 }
