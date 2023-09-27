@@ -5,34 +5,40 @@
     
     <%- include('../partials/nav.ejs') %>
 
+    <div class=" advertisement"><p class="adleft">Advertisement</p><img src="https://github.com/NicKreb/cookbook/blob/main/assets/advertisement%201.png?raw=true" height="100" width="600" alt="Place your ad here!"><p class="adright">Advertisement</p></div>
+    <br>
+    <br>
+    <!-- <div class="display-ad right-display-ad"><p class="adleft">Advertisement</p><img src="https://github.com/NicKreb/cookbook/blob/main/assets/advertisement%201.png?raw=true" height="100" width="600" alt="Place your ad here!"><p class="adright">Advertisement</p></div> -->
+
     <div class="create-recipe content">
         <form action="/recipes" method="POST">
             <!-- title -->
-            <label for="title">*Recipe title:</label>
-            <input type="text" id="title" name="title" required>
+            <label for="title"><span class="asterisk">*</span>Recipe title:</label>
+            <input type="text" id="title" name="title" placeholder="Pumpkin Pie" required>
             <!-- Image -->
             <label for="recipeImage">Image URL</label>
-            <input type="text" id="recipeImage" name="recipeImage">
+            <input type="text" id="recipeImage" name="recipeImage" placeholder="WebsiteURL.com/image.png">
             <!-- Prep Time -->
             <label for="preptime">Prep Time:</label>
-            <input type="text" id="preptime" name="preptime">
+            <input type="text" id="preptime" name="preptime" placeholder="30">
             <!-- Cook Time -->
-            <label for="cooktime">*Cook Time:</label>
-            <input type="text" id="cooktime" name="cooktime" required>
+            <label for="cooktime"><span class="asterisk">*</span>Cook Time:</label>
+            <input type="text" id="cooktime" name="cooktime" placeholder="120" required>
             <!-- Flavor -->
             <label for="flavor">Flavor:</label>
-            <input type="text" id="flavor" name="flavor">
+            <input type="text" id="flavor" name="flavor" placeholder="Salty, Savory, Sweet, Umami, Bitter, Sour">
             <!-- Ingredients -->
-            <label for="ingredients">*Ingredients:</label>
-            <input type="text" id="ingredients" name="ingredients" required>
+            <label for="ingredients"><span class="asterisk">*</span>Ingredients:</label>
+            <input type="text" id="ingredients" name="ingredients"  placeholder="16oz can of Pumpkin Puree, premade Pie Crust, 1 cup of Brown Sugar, etc..." required>
             <!-- Instructions -->
-            <label for="instructions">*Instructions:</label>
-            <input type="text" id="instructions" name="instructions" required>
+            <label for="instructions"><span class="asterisk">*</span>Instructions:</label>
+            <input type="text" id="instructions" name="instructions" placeholder="Pour Pumpkin Puree in to premade pie crust....." required>
             <button>Submit</button>
         </form>
         
     </div>
-
+    <br>
+    <br>
     <%- include('../partials/footer.ejs') %>
 </body>
 </html>
