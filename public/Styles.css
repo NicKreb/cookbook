@@ -248,3 +248,18 @@ textarea{
     margin-left: 10px;
     margin-right: 10px;
 }
+
+.not-found{
+    display: block;
+    width: 100%;
+}
+
+.not-found p{
+    display: flex;
+    border: solid black 2px;
+    background-color: white;
+    justify-content: center;
+    font-family: 'Croissant One', cursive;
+    text-decoration:  3px thick solid;
+    margin-bottom: 20px;
+}
