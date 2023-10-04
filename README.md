@@ -1,6 +1,6 @@
 # cookbook
 
-## ################## Recipe Book Project ##################
+## Recipe Book Project ##
 
 For those who desire to run this project, once you have cloned or downloaded the repository Locally.
 
@@ -9,7 +9,7 @@ and then open your browser to `https://localhost:5760`
 
 I only ask that you don't add too much to the DB for storage reasons, please and thankyou.
 
-## Requirements
+## Requirements ##
 This recipe book should have very similar functionality compared to the blog project we made.
 
 * The app should have access to the MongoDB cluster krebMenu in the KrebCookbook collection
